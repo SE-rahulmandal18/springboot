@@ -1,0 +1,9 @@
+package com.simpli.springinterfaces.models;
+
+public class Guitar implements Instrument{
+	
+	public void play() {
+		
+	}
+
+}

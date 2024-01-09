@@ -1,0 +1,5 @@
+package com.simpli.springwiring.autowiring;
+
+public class Scores {
+
+}

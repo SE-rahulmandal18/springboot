@@ -1,0 +1,9 @@
+package com.simpli.springwiring.autowiring;
+
+public class Scores {
+	
+	private double physics;
+	private double chemistry;
+	private double maths;
+	
+}
