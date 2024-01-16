@@ -1,0 +1,31 @@
+package com.example.demo;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.example.domain.Product;
+import com.example.repository.ProductRepository;
+
+@SpringBootApplication
+public class StoreappdemoApplication implements CommandLineRunner {
+
+	public static void main(String[] args) {
+		SpringApplication.run(StoreappdemoApplication.class, args);
+	}
+
+	@Autowired
+	@Qualifier("productRepository")
+	private ProductRepository productRepository;
+	
+	@Override
+	public void run(String... args) throws Exception {
+	
+		productRepository.save(new Product(0, "Samsung", 2500.0));
+		
+		System.out.println(productRepository.findAll());
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.simpli.storeapp;
+
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.simpli.storeapp.config.Initializer;
+import com.simpli.storeapp.dao.ProductDao;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(Initializer.class);
+        
+        ProductDao productDao  = context.getBean("productDao", ProductDao.class);
+       
+       System.out.println(productDao.insert(new Product("LG",45000, LocalDate.now() )));
+        System.out.println(productDao.insert(new Product("Sony",35000, LocalDate.now() )));
+//        System.out.println(productDao.insert(new Product("Samsung",25000, LocalDate.now() )));
+//        System.out.println(productDao.insert(new Product("Dell",27000, LocalDate.now() )));
+//        
+//        System.out.println(productDao.update(new Product(3,"Samsung",25500, LocalDate.now() )));
+        
+        System.out.println(productDao.getAllProducts());
+        
+        System.out.println(productDao.getProductById(2));
+        
+        System.out.println(productDao.delete(2));
+        
+        context.registerShutdownHook();
+        context.close();
+    }
+}
