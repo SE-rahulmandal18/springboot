@@ -1,0 +1,11 @@
+package com.simpli.springzeroxml;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+      Application context = new AnnotationConfigApplicationContext(AppConfig.calss);
+    }
+}

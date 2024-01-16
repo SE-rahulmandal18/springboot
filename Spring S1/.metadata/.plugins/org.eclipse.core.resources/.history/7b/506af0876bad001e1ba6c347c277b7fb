@@ -1,0 +1,5 @@
+package com.simpli.springinterfaces.models;
+
+public class Piano {
+
+}
