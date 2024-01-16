@@ -2335,3 +2335,5 @@ Caused by: java.lang.Exception: File not found: C:\Users\rahul\eclipse-workspace
 2024-01-16 12:21:39,254 [Worker-12: Importing Maven projects] ERROR o.e.m.j.i.AbstractJavaProjectConfigurator - Failed to find a compatible VM for environment id 'JavaSE-17', falling back to workspace default
 2024-01-16 12:21:40,097 [Worker-12: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 5 sec
 2024-01-16 12:21:42,194 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-01-16 12:21:42,238 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-01-16 12:21:42,248 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\rahul\New folder (3)\eclipse-workspace2\Spring S1\storeappdemo\src\test\resources
