@@ -26,9 +26,12 @@ public class StoreappdemoApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 	
-		productRepository.save(new Product(0, "Samsung", 2500.0));
-		productRepository.save(new Product(0, "LG", 2400.0));
-		productRepository.save(new Product(0, "Dell", 2100.0));
+		
+		/*
+		 * productRepository.save(new Product(0, "Samsung", 2500.0));
+		 * productRepository.save(new Product(0, "LG", 2400.0));
+		 * productRepository.save(new Product(0, "Dell", 2100.0));
+		 */
 		
 		System.out.println(productRepository.findAll());
 	}

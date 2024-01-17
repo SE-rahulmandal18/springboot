@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -8,6 +9,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -59,6 +61,13 @@ public class ProductController {
 		
 		return productService.update(product);
 	}
+	
+	@PatchMapping(path="/products/{id}", consumes = "application/json")
+	@ResponseStatus(code = HttpStatus.NO_CONTENT)
+		public void pathcProduct(@RequestBody Map<String, Object> updates, @PathVariable("id") int id) {
+			
+		productService.patchProduct(updates, id);
+		}
 	
 
 	@GetMapping(path="/products/name/{name}", produces = "application/json")
