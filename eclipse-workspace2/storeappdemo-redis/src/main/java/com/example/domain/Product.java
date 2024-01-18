@@ -2,6 +2,7 @@ package com.example.domain;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
+import org.springframework.data.redis.core.index.Indexed;
 
 @RedisHash
 public class Product {
@@ -9,8 +10,10 @@ public class Product {
 	@Id
 	private String id;
 
+	@Indexed
 	private String name;
-
+	
+	@Indexed
 	private Double price;
 
 	public Product() {
