@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\rahul\New folder (3)\eclipse-workspace2\Spring S1\storeappdemo"/>
 			<item value="C:\Users\rahul\eclipse-workspace2\storeappdemo-mongodb"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -12,5 +13,9 @@
 			<item value="[groupId].[artifactId]-[version]"/>
 			<item value="[name]"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>
