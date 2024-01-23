@@ -22,4 +22,5 @@
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="com.example.exception.ExceptionResponse"/>
+    <fullyQualifiedTypeName name="net.bytebuddy.dynamic.loading.ClassInjector.UsingReflection.System"/>
 </qualifiedTypeNameHistroy>
