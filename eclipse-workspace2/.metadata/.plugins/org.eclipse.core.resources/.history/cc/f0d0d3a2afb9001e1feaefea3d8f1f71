@@ -1,0 +1,7 @@
+package com.simpli.inheritance;
+
+public class Manager extends Employee{
+	
+	
+
+}

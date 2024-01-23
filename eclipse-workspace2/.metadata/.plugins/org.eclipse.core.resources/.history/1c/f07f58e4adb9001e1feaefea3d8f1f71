@@ -1,0 +1,16 @@
+package com.simpli.inheritance;
+
+public class EncapsulationMain {
+
+	public static void main(String[] args) {
+		
+		Employee c = new Employee();
+		
+		c.setRadius(-10);
+		
+		double radius = c.getRadius();
+ 
+		System.out.println("Radius = "+radius); 
+	}
+
+}

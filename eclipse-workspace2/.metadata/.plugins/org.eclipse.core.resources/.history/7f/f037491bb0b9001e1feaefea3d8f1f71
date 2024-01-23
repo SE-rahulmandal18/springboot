@@ -1,0 +1,23 @@
+package com.simpli.inheritance;
+
+public class Manager extends Employee{
+	
+	private double incentives;
+	
+	public Manager() {
+		
+	}
+
+	public Manager(double incentives) {
+		super();
+		this.incentives = incentives;
+	}
+
+	@Override
+	public String toString() {
+		return "Manager [incentives=" + incentives + "]";
+	}
+	
+	
+
+}
