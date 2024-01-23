@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;MyDate.java&apos; to &apos;ObjectOrientedProgramming/src/com.simpli.equalsmethod&apos;&#x0D;&#x0A;- Original project: &apos;IntroductionToJava&apos;&#x0D;&#x0A;- Destination element: &apos;ObjectOrientedProgramming/src/com.simpli.equalsmethod&apos;&#x0D;&#x0A;- Original element: &apos;com.simpli.demo.MyDate.java&apos;" description="Copy compilation unit" destination="=ObjectOrientedProgramming/src&lt;com.simpli.equalsmethod" element1="/src&lt;com.simpli.demo{MyDate.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1705989857912" units="1" version="1.0"/>
+</session>
