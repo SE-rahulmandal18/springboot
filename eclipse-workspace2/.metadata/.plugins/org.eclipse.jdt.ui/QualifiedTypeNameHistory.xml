@@ -23,4 +23,6 @@
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="com.example.exception.ExceptionResponse"/>
     <fullyQualifiedTypeName name="net.bytebuddy.dynamic.loading.ClassInjector.UsingReflection.System"/>
+    <fullyQualifiedTypeName name="com.simpli.equalsmethod.MyDate"/>
+    <fullyQualifiedTypeName name="com.simpli.arraysdemo.MyDate"/>
 </qualifiedTypeNameHistroy>

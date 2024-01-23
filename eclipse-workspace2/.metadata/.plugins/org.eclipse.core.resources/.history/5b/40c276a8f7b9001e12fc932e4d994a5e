@@ -1,0 +1,18 @@
+package com.simpli.stringbuffer;
+
+public class StringBuffer {
+
+	public static void main(String[] args) {
+	
+		String str = "Hello";
+		
+		StringBuffer sb = new StringBuffer();
+		
+		sb.append(" World");
+		
+		System.out.println(sb);
+		
+
+	}
+
+}
