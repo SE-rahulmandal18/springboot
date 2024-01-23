@@ -1,0 +1,20 @@
+package com.simpli.wrapperclassdemo;
+
+public class WrapperClassDemo {
+
+	public static void main(String[] args) {
+		
+		// Autoboxing and Auto Unboxing
+		
+		int num = 10;
+	    Integer i = num;   // Autoboxing   //	    System.out.println(i.SIZE);
+	    
+	    
+	    
+
+	    
+	    
+
+	}
+
+}
