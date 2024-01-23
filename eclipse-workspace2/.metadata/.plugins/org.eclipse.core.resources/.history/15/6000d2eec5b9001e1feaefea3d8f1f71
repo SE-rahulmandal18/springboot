@@ -1,0 +1,27 @@
+package com.simpli.arraysdemo;
+
+public class ArraysDemo {
+
+	public static void main(String[] args) {
+			
+	
+		singleDArray();
+
+	}
+    private static void singleDArray() {
+	
+    	int[] arr = new int[5];
+		
+        int count = 1;
+		
+		for(int i=0;  i<arr.length; i++) {
+			
+			arr[i] = count++;
+		}
+		
+		for(int i=0; i<arr.length; i++) {
+			
+			System.out.println(arr[i]);
+		}
+    }
+}
