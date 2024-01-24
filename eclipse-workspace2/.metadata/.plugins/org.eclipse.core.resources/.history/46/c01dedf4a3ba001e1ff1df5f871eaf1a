@@ -1,0 +1,26 @@
+package com.simpli.trywithresources;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class TryWithResources {
+
+	public static void main(String[] args) {
+		
+		PrintWriter pw = null;
+		try {
+			pw = new PrintWriter("abc.txt");
+			pw.write("Hello World");
+			
+			System.out.println("Content written inside the file...");
+
+		} catch (FileNotFoundException e) {
+
+			e.printStackTrace();
+		} finally {
+			pw.close();
+		}
+
+	}
+
+}
