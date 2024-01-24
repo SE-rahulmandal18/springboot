@@ -25,4 +25,7 @@
     <fullyQualifiedTypeName name="net.bytebuddy.dynamic.loading.ClassInjector.UsingReflection.System"/>
     <fullyQualifiedTypeName name="com.simpli.equalsmethod.MyDate"/>
     <fullyQualifiedTypeName name="com.simpli.arraysdemo.MyDate"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="com.simpli.stringbuffer.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
 </qualifiedTypeNameHistroy>
