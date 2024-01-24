@@ -1,0 +1,13 @@
+package com.simpli.exception1;
+
+import java.io.*;
+
+public class Exception2 {
+
+	public static void main(String[] args) {
+		
+		FileInputStream fin =  new FileInputStream("abc.txt");
+
+	}
+
+}
