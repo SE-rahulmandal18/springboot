@@ -1,0 +1,11 @@
+package com.simpli.stringtokenizer;
+
+public class StringTokenizerMain {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}
