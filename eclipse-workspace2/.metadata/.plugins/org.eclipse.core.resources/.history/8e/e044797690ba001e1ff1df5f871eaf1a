@@ -1,0 +1,27 @@
+package com.simpli.customexception;
+
+import java.util.Scanner;
+
+class CustomExceptionMain {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int age = sc.nextInt();
+		
+		validateAge(age);
+
+	}
+
+	private static void validateAge(int age) {
+		
+		if(age > 18 ) {
+			System.out.println("Age us valid for voting");
+			
+		}else {
+			
+		}
+		
+	}
+
+}

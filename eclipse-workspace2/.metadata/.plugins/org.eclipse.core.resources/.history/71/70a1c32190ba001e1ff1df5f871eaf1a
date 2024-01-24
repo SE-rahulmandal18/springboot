@@ -1,0 +1,9 @@
+package com.simpli.customexception;
+
+public class InvalidAgeException extends RuntimeException {
+
+	private String message;
+	
+	
+	
+}

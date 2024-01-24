@@ -1,0 +1,6 @@
+package com.simpli.customexception;
+
+public class InvalidAgeException {
+
+	
+}
