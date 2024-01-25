@@ -1,0 +1,19 @@
+package com.simpli.functionalinterface;
+
+@FunctionalInterface
+interface Addable{ // functional interface
+	
+	int add();
+	
+	default void print() {
+		 
+	}
+}
+
+public class FunctionalInterfaceMain {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

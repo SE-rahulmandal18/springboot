@@ -1,0 +1,9 @@
+package com.simpli.functionalinterface;
+
+public class LambdaExpressions3 {
+
+	public static void main(String[] args) {
+	
+		
+	}
+}

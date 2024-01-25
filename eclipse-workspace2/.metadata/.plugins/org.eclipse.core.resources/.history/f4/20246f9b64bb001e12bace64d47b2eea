@@ -1,0 +1,10 @@
+package com.simpli.interfacemethods;
+
+public class InterfaceMethods {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
