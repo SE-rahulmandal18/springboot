@@ -1,0 +1,14 @@
+package com.simpli.streamapi;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class StreamAPI {
+
+	public static void main(String[] args) {
+		
+		List<Integer> list = Arrays.asList(5,7,5,1,8,3,5);
+
+	}
+
+}
