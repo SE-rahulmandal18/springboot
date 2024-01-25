@@ -1,0 +1,17 @@
+package com.simpli.boundedtype;
+
+class AverageCalci{
+	
+	public double average() {
+		
+	}
+}
+
+public class BoundedType {
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}

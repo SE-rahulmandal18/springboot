@@ -1,0 +1,22 @@
+package com.simpli.boundedtype;
+
+class AverageCalci<T extends Number>{
+	
+	public double average(T... numbers) { // Integer[] {1,2,3,4,5}
+		
+		 double sum = 0;
+		 
+		 for (T t : numbers) {
+		   sum += t;	
+		}
+	}
+}
+
+public class BoundedType {
+
+	public static void main(String[] args) {
+	
+
+	}
+
+}

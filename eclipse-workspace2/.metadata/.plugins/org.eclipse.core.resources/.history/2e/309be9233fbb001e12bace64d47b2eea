@@ -1,0 +1,28 @@
+package com.simpli.list;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListDemo {
+
+	public static void main(String[] args) {
+		
+		List<Employee> emps = new ArrayList<Employee>();
+		
+		// add element inside the collection
+		emps.add(new Employee(123, "abc", 23213));
+		emps.add(new Employee(123, "prq", 12543));
+		emps.add(new Employee(123, "qxy", 45651));
+		
+		emps.add(2, new Employee(999, "hkj", 45453));
+		
+		// how many elements ?
+		System.out.println("Number of elements = "+emps.size());
+		
+		//print the list
+		System.out.println("list elements");
+		System.out.println(emps);
+
+	}
+
+}
