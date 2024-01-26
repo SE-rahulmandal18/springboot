@@ -1,5 +1,0 @@
-package com.example.exceptionHandler;
-
-public class CustomizedResponseEntityExceptionHandler {
-
-}

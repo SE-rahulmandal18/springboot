@@ -1,8 +1,0 @@
-package com.example.exceptionHandler;
-
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.server.handler.ResponseStatusExceptionHandler;
-
-public class CustomizedResponseEntityExceptionHandler extends ResponseStatusExceptionHandler<T>n{
-
-}
