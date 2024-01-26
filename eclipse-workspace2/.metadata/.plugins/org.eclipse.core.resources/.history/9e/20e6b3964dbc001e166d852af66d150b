@@ -1,0 +1,24 @@
+package com.simpli.thread1;
+
+import java.util.Iterator;
+
+class MyThread extends Thread {
+	
+	public void run() {
+		
+		for (Iterator iterator = collection.iterator(); iterator.hasNext();) {
+			type type = (type) iterator.next();
+			
+		}
+	}
+}
+
+public class ThreadDemo1 {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

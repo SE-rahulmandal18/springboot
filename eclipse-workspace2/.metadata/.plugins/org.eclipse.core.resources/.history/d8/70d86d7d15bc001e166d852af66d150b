@@ -1,0 +1,19 @@
+package com.simpli.fileio2;
+
+import java.io.FileOutputStream;
+
+public class SerializationDemo {
+
+	public static void main(String[] args) {
+		
+		// 1. FOS 
+		
+		try(FileOutputStream fos) {
+			
+		}
+		catch(Exception e) {
+			
+			e.printStackTrace();
+		}
+	}
+}

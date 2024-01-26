@@ -1,0 +1,25 @@
+package com.simpli.fileio2;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class DeSerializationDemo {
+
+	public static void main(String[] args) {
+		
+		// 1. FOS 
+		
+		try(FileInputStream fos =  new FileInputStream("book.txt");
+				ObjectInputStream oos = new ObjectInputStream(fos)) {
+			
+			oos.writeObject(new Book(1, "programing in java", 7877));
+			
+			System.out.println("Data is written inside the file");
+			
+		}
+		catch(Exception e) {
+			
+			e.printStackTrace();
+		}
+	}
+}

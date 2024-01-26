@@ -1,0 +1,10 @@
+package com.simpli.fileio2;
+
+public class Book {
+
+	private int id;
+	private String name;
+	private double salary;
+	
+	
+}
