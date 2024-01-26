@@ -1,0 +1,58 @@
+package com.simpli.interthread;
+
+class Account {
+
+	private double balance = 2000;
+
+	public synchronized void withdraw(int amount) {
+
+		System.out.println("withdrawl is happening with amount = " + amount);
+
+		if (balance < amount) {
+
+			System.out.println("Insufficient balance....");
+		} else {
+
+			balance -= amount;
+
+			System.out.println("withdrawl successful...remaining balance =" + balance);
+		}
+	}
+
+	public synchronized void deposit(int amount) {
+
+		System.out.println("deposit is happening with amount = " + amount);
+
+		balance += amount;
+
+		System.out.println("deposit successful...remaining balance =" + balance);
+	}
+
+}
+
+public class InterthreadCommunication {
+
+	public static void main(String[] args) {
+
+		Account account = new Account();
+
+		Runnable r = new Runnable() {
+
+			@Override
+			public void run() {
+
+				account.withdraw(5000);
+			}
+		};
+
+		Runnable r2 = new Runnable() {
+
+			@Override
+			public void run() {
+
+				account.deposit(5000);
+			}
+		};
+	}
+
+}

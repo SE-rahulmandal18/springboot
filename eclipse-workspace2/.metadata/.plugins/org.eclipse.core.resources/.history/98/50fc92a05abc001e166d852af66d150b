@@ -1,0 +1,29 @@
+package com.simpli.interthread;
+
+
+class Account {
+	
+	private double balance = 2000;
+	
+	public void withdraw(int amount) {
+		
+		balance -= amount;
+	}
+	
+    public void deposit(int amount) {
+		
+		balance += amount;
+	}
+	
+}
+
+public class InterhreadCommunicstion {
+
+	public static void main(String[] args) {
+	
+		
+	
+
+	}
+
+}

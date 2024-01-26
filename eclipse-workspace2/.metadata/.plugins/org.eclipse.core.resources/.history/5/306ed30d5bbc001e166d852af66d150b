@@ -1,0 +1,37 @@
+package com.simpli.interthread;
+
+
+class Account {
+	
+	private double balance = 2000;
+	
+	public void withdraw(int amount) {
+		
+		System.out.println("withdrawl is happening with amount = "+amount);
+		
+		if(balance < amount) {
+			
+			System.out.println("Insufficient balance....");
+		}
+		balance -= amount;
+		
+		System.out.println("withdrawl successful...withdrawl balance ="+balance);
+	}
+	
+    public void deposit(int amount) {
+		
+		balance += amount;
+	}
+	
+}
+
+public class InterhreadCommunicstion {
+
+	public static void main(String[] args) {
+	
+		
+	
+
+	}
+
+}
