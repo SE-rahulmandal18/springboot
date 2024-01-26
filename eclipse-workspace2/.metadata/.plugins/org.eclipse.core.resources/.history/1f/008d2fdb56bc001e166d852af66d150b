@@ -1,0 +1,22 @@
+package com.simpli.threadsync;
+
+class Table {
+	
+	public void printTable(int num) {
+		
+		for (int i = 0; i < 11; i++) {
+			
+			System.out.println(" "+num * i);
+		}
+		System.out.println();
+	}
+}
+
+public class ThreadSynchro {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}
