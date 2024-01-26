@@ -1,0 +1,20 @@
+package com.simpli.fileio1;
+
+import java.io.FileInputStream;
+
+public class FileIO2 {
+
+	public static void main(String[] args) {
+		
+		try(FileInputStream fout=  new FileInputStream("file.txt");){
+			
+			
+			
+		}
+		catch (Exception e) {
+		   e.printStackTrace();
+		}
+
+	}
+
+}
