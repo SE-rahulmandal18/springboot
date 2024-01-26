@@ -1,0 +1,17 @@
+package com.simpli.datetimeapi;
+
+import java.time.LocalDate;
+import java.util.Date;
+
+public class DateTimeAPI {
+
+	public static void main(String[] args) {
+		
+		Date d = new Date();
+		System.out.println(d);
+		
+	      LocalDate d2= LocalDate.now();
+	      System.out.println(d2);
+	}
+
+}
