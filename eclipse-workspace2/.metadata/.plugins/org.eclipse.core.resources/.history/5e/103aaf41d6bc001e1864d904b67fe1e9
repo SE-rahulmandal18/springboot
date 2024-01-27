@@ -1,0 +1,33 @@
+package com.simpli.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ProductDAOImpl implements ProductDAO {
+
+	@Override
+	public void getAllProducts(Connection con) throws SQLException {
+		
+	 Statement satement = con.createStatement();
+	}
+
+	@Override
+	public void createProduct(Connection con) {
+		
+		
+	}
+
+	@Override
+	public void deleteProduct(Connection con) {
+		
+		
+	}
+
+	@Override
+	public void updateProduct(Connection con) {
+		
+		
+	}
+
+}

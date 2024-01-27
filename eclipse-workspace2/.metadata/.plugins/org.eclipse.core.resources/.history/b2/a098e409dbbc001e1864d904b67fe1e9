@@ -1,0 +1,15 @@
+package com.simpli.dao;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+
+public interface ProductDAO {
+
+	void getAllProducts(Connection con) throws SQLException;
+	
+	void createProduct(Connection con);
+	
+	void deleteProduct(Connection con);
+	
+	void updateProduct(Connection con);
+}

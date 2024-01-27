@@ -1,0 +1,28 @@
+package com.simpli.jdbc;
+
+import java.io.FileInputStream;
+import java.sql.Connection;
+import java.util.Properties;
+
+public class ConnectionUtil {
+
+	private static Connection con;
+	
+	public static Connection getConnection() {
+		
+	try(FileInputStream fin  = new FileInputStream("db.properties");) {
+		
+		Properties p = new Properties();
+		p.load(fin);
+		
+		// loading and registering the driver
+		
+	} catch (Exception e) {
+		
+		e.printStackTrace();
+	}
+			
+		
+	
+  }
+}

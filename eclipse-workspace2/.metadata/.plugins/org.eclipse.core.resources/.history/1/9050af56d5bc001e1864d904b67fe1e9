@@ -1,0 +1,8 @@
+package com.simpli.dao;
+
+import java.sql.Connection;
+
+public interface ProductDAO {
+
+	void getAllProducts(Connection con);
+}

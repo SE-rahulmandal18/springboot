@@ -1,0 +1,12 @@
+package com.simpli.jdbc;
+
+import java.sql.*;
+
+public class ConnectionUtil {
+
+	private static Connection con;
+	
+	public static Connection getConnection() {
+		
+	}
+}

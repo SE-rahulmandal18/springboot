@@ -1,0 +1,5 @@
+package com.simpli.jdbc;
+
+public class ConnectionUtil {
+
+}

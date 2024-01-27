@@ -1,8 +1,0 @@
-package com.simpli.fileio2;
-
-public class SerializationDemo {
-
-	public static void main(String[] args) {
-		
-	}
-}
