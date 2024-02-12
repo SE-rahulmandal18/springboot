@@ -1,0 +1,10 @@
+package com.simpli.hellorest.resources;
+
+@Path
+public class HelloResource {
+
+	public String getMessage() {
+		
+		return "Hello World !!";
+	}
+}

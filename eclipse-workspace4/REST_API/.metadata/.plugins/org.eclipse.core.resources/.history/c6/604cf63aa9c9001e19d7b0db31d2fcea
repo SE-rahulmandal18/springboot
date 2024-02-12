@@ -1,0 +1,13 @@
+package com.simpli.hellorest.resources;
+
+import jakarta.ws.rs.Path;
+
+@Path("getMessage")
+public class HelloResource {
+
+	@GET
+	public String getMessage() {
+		
+		return "Hello World !!";
+	}
+}

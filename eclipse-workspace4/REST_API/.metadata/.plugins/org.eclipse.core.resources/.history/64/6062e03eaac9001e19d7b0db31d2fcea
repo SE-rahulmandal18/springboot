@@ -1,0 +1,19 @@
+package com.simpli.hellorest.resources;
+
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.Path;
+import jakarta.ws.rs.Produces;
+import jakarta.ws.rs.core.MediaType;
+
+@Path("getMessage")
+public class HelloResource {
+
+	@GetMapping(path="/list", produces = "Plain_Text")
+	public String getMessage() {
+		
+		return "Hello World !!";
+	}
+	
+	
+	
+}

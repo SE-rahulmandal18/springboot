@@ -1,0 +1,8 @@
+package com.simpli.hellorest.resources;
+
+public class MyResource {
+	
+	public String getMessage()
+ {
+		}
+ }

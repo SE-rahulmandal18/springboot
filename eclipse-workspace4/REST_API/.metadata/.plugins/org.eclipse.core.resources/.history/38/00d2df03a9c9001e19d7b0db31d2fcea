@@ -1,0 +1,9 @@
+package com.simpli.hellorest.resources;
+
+public class HelloResource {
+
+	public String getMessage() {
+		
+		return "Hello World !!"
+	}
+}
