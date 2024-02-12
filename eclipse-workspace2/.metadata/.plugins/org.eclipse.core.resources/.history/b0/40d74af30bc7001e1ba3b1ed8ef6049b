@@ -1,0 +1,36 @@
+package com.simpli.calculator;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import java.lang.reflect.Executable;
+
+import org.junit.jupiter.api.Test;
+
+class MathUtilsTest {
+
+	@Test
+	void addTest() {
+		
+		MathUtil mathUtil =  new MathUtil();
+		
+		int actual = mathUtil.add(2, 2);
+		int expected = 4;
+		
+		assertEquals(expected, actual);
+	}
+          
+	void divideTest() {
+		
+		MathUtil mathUtil =  new MathUtil();
+		
+		Executable e = new Executable() {
+			
+			public void execute() throws Throwable {
+				// TODO Auto-generated method stub
+				
+			}
+		}; 
+		assertThrows(ArithmeticException.class);
+	}
+}

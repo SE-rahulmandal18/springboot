@@ -1,0 +1,20 @@
+package com.simpli.calculator;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class MathUtilsTest {
+
+	@Test
+	void addTest() {
+		
+		MathUtil mathUtil =  new MathUtil();
+		
+		int actual = mathUtil.add(2, 2);
+		int expected = 4;
+		
+		assertEquals(expected, actual);
+	}
+
+}

@@ -1,5 +1,0 @@
-package com.simpli.dao;
-
-public interface ProductDAO {
-
-}

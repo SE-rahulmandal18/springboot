@@ -1,0 +1,42 @@
+package com.simpli.calculator;
+
+
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.function.Executable;
+
+class MathUtilsTest {
+
+	@Test
+	void addTest() {
+		
+		MathUtil mathUtil =  new MathUtil();
+		
+		int actual = mathUtil.add(2, 2);
+		int expected = 4;
+		
+		assertEquals(expected, actual);
+	}
+       
+	@Test
+	void divideTest() {
+		
+		MathUtil mathUtil =  new MathUtil();
+	
+		Executable executable = () -> mathUtil.divide(7, 0);
+		
+		assertThrows(ArithmeticException.class, executable);
+	}
+	
+	@Test
+	void maxNumberTset() {
+		
+		MathUtil mathUtil =  new MathUtil();
+		
+		assertEquals(7, mathUtil.findMax(new int[] {3, 2, 7, 10, 1}));
+		
+	}
+}

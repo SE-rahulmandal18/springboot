@@ -1,12 +1,12 @@
 package com.simpli.dao;
 
+import java.sql.CallableStatement;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
 import java.sql.Statement;
-
-import java.sql.CallableStatement;
 
 public class ProductDAOImpl implements ProductDAO {
 
@@ -18,6 +18,17 @@ public class ProductDAOImpl implements ProductDAO {
 		Statement satement = con.createStatement();
 	 
 	 ResultSet rst = satement.executeQuery("select *  from product");
+	
+	 
+	 // Restultset Metadat
+	 ResultSetMetaData metaData = rst.getMetaData();
+	 
+	 System.out.println(metaData.getColumnCount());
+	 
+	 for (int i = 1; i < metaData.getColumnCount(); i++) {
+		 System.out.println(metaData.getColumnName(i)+" ");
+	}
+	 System.out.println();
 	 
 	 while(rst.next()) {
 		 
