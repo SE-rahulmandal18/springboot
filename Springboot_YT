@@ -1,0 +1,111 @@
+Coupling : refers to how closely connected different components
+         or systems are
+
+Types of Coupling :
+
+i. Tight Coupling - describe a scenario where software components
+
+are highly dependent on each other.
+
+
+ii. Loose Coupling - describe a scenario where software components
+
+are less dependent on each other. i.e. change in one component
+
+minimal or no impact on the other component. This makes our system
+
+much more flexible and easy to modify or extent.
+
+
+======================================
+
+Achieving Loose Coupling -
+
+i. Interface and Abstraction
+ii. Dependency Injection
+iii. Event Driven Architecture
+
+==============================================
+
+IOC - 
+so Instead of creating the object of the instance,  If spring framework somehow provide us the object during runtime .
+
+so we have passed on the obj creation to spring framework, so the controlled is inverted. Hence know as IOC.
+
+
+===============================================
+
+Beans - objects that are managed by spring framework are known as 
+        Beans.
+
+
+===============================================
+
+
+Spring Container -  manages the creation, management of object
+of your spring application.
+
+If you have your application running we might want spring to manage our objects, and so spring with the help of spring container manages the objects.
+
+Entire lifecycle of objects is managed by spring container.
+
+
+===============================================
+
+Types of Spring Container :
+
+i. Application context
+ii. Bean Factory
+
+===============================================
+
+Important Question -> 
+
+We have spring container it manages all the object.
+
+How Does the spring framework know which object to manage and the details of what to manage ?? who will tell spring container ??
+
+Ans :: we as a developer are responsible to tell the spring container that we want to manager these objects with the help of configuration file.
+
+we will have some  config define in our file that will be picked up by the spring framework. and with the help of that configuration file the 
+
+spring container would know that these are the object that he need to manage and it will pick up those object and it will instantiate them and 
+
+it will so everything that it needs to.
+
+====================================================
+
+
+Configuration file contain Bean Definition -
+
+so if you want the object to be managed by spring framework you need to declare that particular object as a Bean.
+
+====================================================
+
+
+Application context - is an Interface in Spring representing the IOC 
+
+container that manages the beans and the dependencies.
+
+
+ClassPathXmlApplicationContext is an implementation of 
+
+ApplicationContext - is responsible for setting up and configuring 
+
+the spring container. 
+
+It loads the context definition from the context file located in 
+the class path.
+
+=====================================================
+
+DI : is a design patter used to achieve loose coupling between classes by removing the direct dependency instantiation from the dependent class itself.
+
+Two Type of DI :
+
+i. Constructor Injection
+ii. Setter Injection
+
+======================================================
+
+
