@@ -1,0 +1,540 @@
+Java S1: DAY 2:
+
+
+What is constructor in java ?
+
+Consturctor is a special memeber fucn of the class
+1.same name as that of the class
+2.which gets called at the time of obj creation
+3.no return time
+4.can be overloaded
+5.To initialize instance varibale
+
+
+
+Types constructor - 
+  1. Default 
+  2. Parametrized
+
+
+OOPs:
+ 
+1. Abstraction
+    Employee - id,name, salary, blood_group,weight 
+    Finding out the key aspects of an entity and ignoring
+      the rest w.r.t problem scenerio
+    a) Attribute level
+    b) Method level
+
+    1. Abstract Class
+    2. Interfaces
+
+2. Encapsulation -Security
+       Access Specifiers 
+       Hiding the data & implementation such that we can 
+       provide security and provide the interface by using
+       Accessor -Getters and Mutators - Setters or any public
+       method.
+
+3. Inheritance
+      1. Code  reusablitiy
+      2. Extensibility
+   
+      Types of Inheritance
+      1. Single     - 1 Parent 1 child
+      2. Multilevel - A -> B -> C 
+      3. Hierarchy  - Tree like
+
+Object class - Cosmic super class of all the classes in java, 9 methods
+               1. toString : String
+               2. equals : boolean - checks the content equality of the
+                  Java Objects
+               3. hashcode
+               4. wait
+               5. notify
+               6. notifyAll
+               7. finalize -GC
+               8. clone  - shallow, deep
+               9. getClass -Refection
+
+        
+4. Polymorphism
+     - a message passed to two or more object which
+       are related behave diff
+            Move - car, helicopter
+    
+     -Types:
+      1. Complie Time/ Static/ Early Bindind - Method overloading
+      2. Runtime Time/ Dynamic/ Late Binding - Method overriding
+             Modifier rule - overriden method should be more accessible
+              as that of the method defined in super calss
+       
+             Super = protected  Sub = protected, public
+  
+             Return type rule - same return type - primitive
+                 Object type - Covarient return types -- Super - sub is valid
+
+             Manager is a subclass of Employee
+             Emloyee getManager()
+             Manager getEmployee()
+
+
+RTT - Runtime Type Indentification - instanceOf operator
+
+In Java Data Abstraction
+1. Abstract Class
+2. Interface
+
+Abstract Class - 
+   1. 0 to 100% abstraction
+     - we cannot instantiate the class - Cannot create the obj of abstract
+     - e.g Animal - tiger, lion
+     - e.g Shape class - Circle, Rectangle etc.
+     Abstract class with abstract method - doesn't have method body
+     non abstract eat(),  abstract sound()
+     Not - atleast it should have one abstract method.
+
+Interface = 100% abstraction - Achive loose coupling
+            JAX-RS - it's a Technology to bulid RESTful WebServices
+              Specifications- Method,Annotation which are unimplemented
+              Jersey Framework, RESTEasy
+              Blue print for class design
+
+
+------------------------------------------------------------------------------
+
+Memory Segments:
+
+1. Stack    -- local variables
+2. Heap     -- instance variable
+3. Data segement -- static variables and method
+4. Code segment
+
+String -
+1. String is a class in java
+2. String is a Immutable obj
+
+------------------------------------------------------------------------------
+
+What is Exception ?
+ -Exception is a class
+ -Runtime Errors
+
+Errors - 2 Types:
+            1. Compline time -systax
+            2. Runtime errors
+
+Runtime Errors
+1. Errors Handlable
+2. Errors are Not Handlable
+
+Exception can be handled - Divide by zero, Array Index out of Bound
+Errors cannot be handled - Stack Overflow, Virtual Machine Error
+
+Why we handle the Exception ?
+ - For normal flow of the program
+     -Set of classes which represents diff excep. obj
+     e.g ArithmeticException, NullPointerException, ClassCastExcepiton
+
+
+
+Types of Exception: 
+1. Unchecked Exception - Due to programmers mistake - Java Resource related
+                         e.g - ArithmeticException 
+                
+-All the classes are directly Inherited from Exception class.
+
+
+   
+                
+2. Checked Exception -   Some External Resources e.g File, Database
+                         e.g - FileNotFound, IOException, SQLException
+
+
+         
+Exceptio Handling can be done by using 2 keywords
+1. try
+2. catch
+
+   
+Syntax - 
+1. try {
+     
+    }
+    catch() {
+   
+    }
+
+    
+2. 
+try {
+
+}
+finally {
+
+ }      
+      
+3.
+try {
+
+}
+cathc() {
+}
+finally{
+
+}
+
+
+finally -  is a block
+
+
+------------------------------------------------------------------------------
+
+throw -
+1. throw is keyword that we use for explicitly thow an exception obj form
+   any block of code
+2. with the help of throw keyword we push the exception obj into the
+   Exception call stack of method.
+
+Syntax - throw new ExceptionClassObject("some message");
+
+- Recommended that we should use throw with user defined Excepitons.
+
+throws - throws is used to declare the exception with the method
+
+method() throws ExceptionClass....
+
+throws is used for propagating the checked exception objects from one method to another.
+
+
+-------------try with resources-------jdk 1.7
+
+Syntax -
+          try(Resources whic impelents AutoClosable interface){
+          }
+          catch(){}
+
+
+
+
+
+
+------------------------------------------------------------------------------
+
+Java S1: DAY 5:
+
+What are Generics in Java ?
+
+Used to make any alogrithm, Data Type independent.
+
+1. Flexibility in terms of Data Type
+2. Type Safety
+
+How to achive generics in java
+ - Parameterized type   Syntax class ClassName<T>
+
+Bounded Type - Parametrized type which is used to achive inheritance in case of Generics.
+
+               Account
+          
+              Saving Account    Current count
+        
+              AccountTransaction<T extends Account>
+              {
+                    T account;
+              }
+
+------------------------------------------------------------------------------
+
+What are collection In Java?
+-group of obj
+-it is a framework
+-its a container of obj
+-interface and classes - Data Structures
+-collection classes provides dynamic storing of elements / dynamically growable
+
+------------------------------------------------------------------------------
+
+How to iterate the list collection
+1. for loop
+2. for each
+3. Iterator     - Interface
+4. ListIterator - Interface
+
+------------------------------------------------------------------------------
+
+
+Stream API in collection
+1. This is Java 8 feature
+2. Stream interface which has lot of methods which we can use to manipilate the 
+Collection
+
+3.sort(), reduce(), map(), filter().....
+4. We can apply the manipulation on the stream with one go....only
+
+
+
+
+------------------------------------------------------------------------------
+Java S1: DAY 6:
+
+
+Java 8 Features
+
+1. default and static method interfaces
+      default is a keyword
+      static methods
+   
+
+2. Functional Prog.
+   
+           -Functional- C,C++
+           - OOPs -     Java, C#
+
+Functional Interface
+def - interface having only one abstract method
+  
+
+3. Creaating Lambda Expessions
+
+4. Method Ref.
+   -Used to refer method of functional interface
+   -It is a form of lambda exp.
+   syntax = Obj :: method_name
+
+
+5. DataTime API
+       java.time,* - LocalDate, LocalTime, LocalDateTime, Period, Zone
+
+
+
+------------------------------------------------------------------------------
+
+
+
+File - I/O
+1. Creating Streams -Byte and Character
+2. Serialization
+
+
+   
+6. Stream API
+    -collection of data
+    -continuous flow of data
+    -Its flow of bytes from your prog.memory to the source - File, network.
+
+Types of streams
+1. Byte streams
+        OutputStream- used from program to destination source
+        InputStream-  destination source to prog.
+1.FileOutputStream
+2.FileInputStream
+
+
+2. Character Streams
+        Writer- character flow from program to destination source
+        Reader- vise versa     
+               
+        FileWriter
+        FileReader
+
+
+
+Serialization In Java-
+- converting state of an obj into a Serialized byte stream 
+
+De Serialization - Reading the state of an obj from file or network or any IO devices.
+
+Steps of Serialization:
+1. Create the obj of FOS
+2. Create the obj of OOS and wrap FOS object inside it.
+3. Create the obj of class which will implement Serializable interface
+4. Write the sate of an obj by using writeObject method of OOS 
+
+Serializable interface - is a marker interface or tagging interface.
+                         an interface does not hv any method.
+                       - I am giving instruction to the compiler
+ 
+Book implements Serializable
+
+-bookId
+-private transient name
+-price
+
+1. Employee implements Serializable {
+}
+
+Manager extends Employee{
+}
+
+Manager m = new Manager(1,"abc",4534,768684);
+
+----------
+
+Person implements Serializable
+                                  Address implements Serializable{ city pincode, street }
+{
+     id, name, age;
+     Address address; // Cotainment
+}
+
+
+
+
+
+------------------------------------------------------------------------------
+
+Java S1: DAY 7:
+
+
+Process vs Thread ?
+
+Process - are executable which run in seperate memory space
+          e.g Ms-word
+
+Thread -a re samall process which run in shared memory space
+        e.g Ms - word grammer check, spell check
+
+1. MultiTasking     - multiple programsare running simultaneously 
+
+2. MultiProcessing  - Vista , win7, win10
+
+3. Multithreading - From single process - multiple threads are running simul.
+
+Advantages of Multithreading:
+1.Reduces response or execution time.
+2.Better utilization of memory
+3.Increses system efficiency
+4.Requires less overhead as far as context switiching is concerned. 
+
+
+Java - The JVM create a thread called main thread s- main()
+Java Supports Multithreading by 2 ways
+
+What happnes in memory when we creat thread
+   1.Stack is created for each thread which has variables & data. 
+local variables = seperate copy
+instance variable =  shared accross all stack - NOT Thread safe
+
+
+Two Ways to create Thread
+1. Extending Thread class with your class
+       Steps:
+              - Create a class and extends with Thread
+              - Override the run method wrirte execution logic inside it.
+              - Create the obj & call the start method 
+
+2.Implementing Runnable Interface.
+  
+1.Runnable Interface
+  run()
+2.Thread implements Runnable
+  run(){}
+3.MyThread extends Thread
+  run()
+
+
+------------------------------------------------------------------------------
+
+
+Thread Synchronization -
+
+Synchronization- 
+  can be achived in 2 ways
+1. Synchronized method
+2. Synchronized block
+
+
+
+
+------------------------------------------------------------------------------
+
+Java S1: DAY 8:
+
+JDBC - Java Database Connectivity
+
+def - JDBC tech provide API's to connect to the RDMS
+      e.g Mysql, Oracle, sysbase, DB2, IBM DB2, Postgres
+
+      MongoDB - documented DB - JSON 
+
+URL - jdbc:<Database_name>:ip:port/db_name
+      e.g jdbc:mysql:localhost:3306/mydb
+
+username - root
+password - root
+
+
+Steps to conncect to database server by JDBC API
+
+1. Add the DB vendor  specific jar into the classpath of your prog.
+
+2. Loading and Registration of the driver.
+      Class.forName("F.Q driver_class");  // databasse vendor specific jar file
+
+3. Establish the connection by using DriverManger class
+     Connection con = DriverManager.getConnection(URL,USERNAME,PASSWORD);
+
+4. Fire the SQL query by using Statement or PreparedStatement or CallableStatement
+
+5. if select Query statement - use ResultSet interface to process the query results
+
+6.Close the connection.
+
+------------------------------------------------------------------------------
+
+CallableStatement - is used for calling stored procedures of PL/SQL
+
+syntax = MYSQL
+
+ CREATE PROCEDURE procedure_name(parameter_list)
+BEGIN
+    statement
+END //
+
+
+
+DELEMITER //
+
+CREATE PROCEDURE GetAllProducts(IN pid int)
+BEGIN
+    SELECT * FROM products where id=pid;
+END //
+
+DELEMETER ;
+
+In this syntax
+
+First, specify the name of the stored procedure thet you want to create
+after the CREATE PROCEDURE Keywords.
+
+Second, specify a list of comma-seperated parameters for the stored procedure in parentheses after the procedure name.
+
+Third, writee the code between the BEGIN END block. The above example just has a simple SELECT statement. After the END keyword, you place the delimiter character to end the procedure statement.
+
+
+To execute  use - CALL getAllProducts()
+
+
+In this syntax, you specify the name of the stored procedure after the CALL keyword. If the stored procedure has parameter, you need to pass argument inside parentheses following the stored procedure name.
+
+
+This example illustrate how to call the GetAllProduct() stored procedure:
+
+Update Product Price by ID
+
+CREATE PROCEDURE `updateProductPrice`(p double, i int)
+BEGIN
+                  update product ste price=p where id=i;
+
+END
+
+----------------------------------------------------------------------
+
+
+Database Metadata and Result Metadata
+
+Metadata - data about database
+
+
+
