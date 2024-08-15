@@ -1,0 +1,252 @@
+Modules:
+
+1)Spring Core Container:
+- Dependency Injection
+    -way of pushing the dependency at Run-time
+
+
+Two ways:
+a) Setter Injection
+b) Constructor Injection
+
+Configuration META-DATA:
+Annotation 
+Xml
+
+Spring Contioner: (ApplicationContext)
+ - ClassPathXmlApplicationContext
+ - FileSystemApplicationContext
+ - AnnoationConfigApplicationContext (Spring 2.5)
+
+2) Spring AOP: (Aspect Oriented Programming)
+- To Implement Cross Cutting Concerns
+
+-logging, tracnscation, caching, exception handling, performance monitoring, notification services
+messaging queue etc.
+
+
+Aspects:
+- Class
+- Concern
+
+Advice:
+- Actions to be taken
+
+Pointcut:
+- Expessions
+
+JoinPoint:
+- Method in execution
+
+
+Spring DAO:
+ -Data Access Object 
+
+JDBC:
+1) Loading the driver         - driverClassName
+2) Establish the connection   - url,username, password
+3) Create the statemet object 
+4) Execute the SQL query
+5) Iterate the ResultSet
+6) Close the rs, stmt, connection(finally block)
+
+SQLException(is checked exception)
+
+
+
+JdbcTemplate(API to reduce boilerplate code)
+ - is a class
+ - org.springframework.dao
+ - thread-safe
+
+DataSorce(Interface)
+ - javax.sql
+
+DriverManagerDataSource
+ - org.springframework.jdbc.datasource
+ - Factory -for connection object
+
+-----------------------------------------------------------------------
+
+MySQL CMD:
+
+create database storedb;
+use storedb;
+
+create table product_details
+(
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(255) NOT NULL,
+price DOUBLE,
+manufacturing_date DATE,
+PRIMARY KEY (id)
+);
+
+show tables;
+
+
+--------------------------------------------------------------------------------------------------
+
+Hibernate :
+  ORM Tools
+
+Gavin King
+
+Steps:
+
+1) hibernate.cfg.xml
+ - username, password, url, driverClassName, dialect
+   hbm.ddl.auto, show_sql, format_sql + mapping files
+
+2) N mapping (Product.hbm.xml) + Annotation
+ - Object Relational Mapping 
+
+a) Create a Configuration obj - read xml files
+b) Build a SessionFactory object (per database)
+-ThreadSafe
+-Singleton
+
+c) CRUD - open a session
+-short lived obj
+- not a thread safe obj
+
+d) Transaction API
+
+e) close the session
+
+-----------------------------------------------------------
+
+Spring -HIBERNATE
+
+1)Hibernate Steps
+
+2) HibernateTemplate - ThreadSafe
+ - Behaviour are depricated
+
+3) Hibernate 3.2v:
+     a) SessionFactory.getCurrentSession()
+
+
+
+-------------------------------------------------------------
+
+Spring Traction management:
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-tx -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-tx</artifactId>
+    <version>6.1.2</version>
+</dependency>
+
+
+Steps:
+
+1) TransactionManager
+
+JDBC - Connection - commit, rollback
+- DataSourceTransactionManager
+
+Hibernate - Transaction-  commit, rollback
+- HibernateTransactionManager
+
+
+JPA - Transaction-  commit, rollback
+- JPATransactionManager
+
+
+2) @Transactional (class/method)
+
+3) @EnableTransactionManagement
+
+-------------------------------------------------------------
+
+ACID 
+- Atomicity
+- Consistency
+- Isolation
+- Durability
+
+Isolation - Transaction Integrity is visible to other users & systems.
+
+Isolation Level:
+
+1) Dirty Read
+ - is the situation when a transaction reads a data that has not yet been commited.
+
+T1 - update a row & leaves it uncommited
+T2 - read the updated row
+T1 - rollback the changes
+T2 - data never existed
+
+2) Non Repeatable read
+ - occurs when a transaction reads the row same row twice,
+   and get a different value each time
+
+3) Phantom Read
+ - occurs when two same queries are executed but the rows
+   reterived by the two are different.
+
+SQL Standard defined 4 Isolation levels:
+
+1) Read UnCommited - Dirty Read, Non Repeatable read, Phantom Read
+
+2) Read Commited - Dont occurs Dirty read 
+
+3) Repeatable Read - Occur Phantom Read
+
+4) Serializable - Dont occurs  Dirty Read, Non Repeatable read, Phantom Read
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------
+SPRING S3-
+
+Spring: (Rod Johnson)
+-Application Framework
+-Java Platform
+
+Modules:
+1) Spring Core Container
+Inversion of Control
+  -Dependency Injection (Loosely Coupling)
+ 
+2) Spring AOP
+   -usecase: Logging, Transaction Mgnt, Spring Security 
+
+3) Spring JBDC
+
+4) Sprng ORM- JPA- Hibernate, Toplink, MyBaits
+
+5) Spring MVC
+
+6) Spring Rest WebServices
+
+--------------------------------------------------------------
+
+Why Spring Boot ??
+-reduces setting up the configuration
+-Auto Configuration
+
+
+
+
+
+
+
+
+
+
+
+
