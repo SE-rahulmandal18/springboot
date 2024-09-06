@@ -1,4 +1,30 @@
-Java S1: DAY 2:
+Java S1: 
+
+DAY 1:
+
+What is class in Java ?
+ - Its a specification for objects 
+
+What is Object ?
+- Its is a Real world Entity which has specific behaviour and structure.
+eg:Employee , Computer, Laptop
+
+
+Characterstic  of Object :
+
+1. State
+2. Behaviour
+3. Identity
+4. Responsibility
+
+
+
+
+
+
+
+
+DAY 2:
 
 
 What is constructor in java ?
